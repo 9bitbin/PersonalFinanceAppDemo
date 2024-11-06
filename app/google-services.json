@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405523148358",
+    "project_id": "personalfinanceappdemo",
+    "storage_bucket": "personalfinanceappdemo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405523148358:android:44225028037a9d63afe447",
+        "android_client_info": {
+          "package_name": "com.example.personalfinanceappdemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCB5f_0hOs9GXO7Hs4GoVg46ns1X4AOgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
