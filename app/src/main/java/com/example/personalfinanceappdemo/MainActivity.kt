@@ -1,5 +1,7 @@
+// Package declaration for the project
 package com.example.personalfinanceappdemo
 
+// Importing necessary Android and Jetpack Compose components
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -68,13 +70,17 @@ import kotlinx.coroutines.tasks.await
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-
+// Main activity of the app, serves as the entry point
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Setting the content view to use Jetpack Compose
         setContent {
+            // Applying the custom app theme
             PersonalFinanceAppDemoTheme {
+                // Creating a surface with the theme's background color
                 Surface(color = MaterialTheme.colorScheme.background) {
+                    // Invoking the navigation function to handle screen navigation
                     Navigation()
                 }
             }
@@ -82,29 +88,28 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/// Main Navigation Function
-
-
-// Firebase Instances
+// Global Firebase Authentication instance for user management
 val auth: FirebaseAuth = FirebaseAuth.getInstance()
-@SuppressLint("StaticFieldLeak")
+
+// Global Firebase Firestore instance for database interactions
+@SuppressLint("StaticFieldLeak") // Suppress lint warning for the static Firebase Firestore instance
 val db: FirebaseFirestore = FirebaseFirestore.getInstance()
 
+// Extension function to add a vertical gradient background to a Composable
 fun Modifier.gradientBackground() = background(
     brush = Brush.verticalGradient(
         colors = listOf(
-            Color(0xFFBBDEFB),
-            Color(0xFF8ECAF6),
-            Color(0xFF64B5F6),
+            Color(0xFFBBDEFB), // Light blue
+            Color(0xFF8ECAF6), // Medium blue
+            Color(0xFF64B5F6), // Dark blue
         )
     )
 )
 
-// Helper Data Class
+// Data class to represent a financial transaction
 data class Transaction(
-    val amount: Double = 0.0,
-    val category: String = "",
-    val type: String = "",
-    val date: Timestamp = Timestamp.now() // Add a default date using Firestore's Timestamp
+    val amount: Double = 0.0, // The amount of the transaction (default is 0.0)
+    val category: String = "", // The category of the transaction (e.g., Food, Rent)
+    val type: String = "", // The type of the transaction (e.g., Income, Expense)
+    val date: Timestamp = Timestamp.now() // The date of the transaction (default is the current time)
 )
-

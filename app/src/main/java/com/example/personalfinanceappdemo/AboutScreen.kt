@@ -18,43 +18,47 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
-
+// Composable function to define the "About" screen in the app
 @Composable
 fun AboutScreen(navController: NavController) {
+    // Arranging elements in a column layout
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .gradientBackground()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+            .fillMaxSize() // Makes the column fill the entire screen
+            .gradientBackground() // Applies a gradient background (assumes custom extension)
+            .padding(16.dp), // Adds padding around the column
+        verticalArrangement = Arrangement.Center, // Centers children vertically
+        horizontalAlignment = Alignment.CenterHorizontally // Centers children horizontally
     ) {
-
+        // Header text for the screen
         Text(
             text = "About This App",
-            style = MaterialTheme.typography.headlineLarge,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.primary,
-            modifier = Modifier.padding(bottom = 16.dp)
+            style = MaterialTheme.typography.headlineLarge, // Uses a large headline typography
+            fontWeight = FontWeight.Bold, // Makes the text bold
+            color = MaterialTheme.colorScheme.primary, // Uses primary color for the text
+            modifier = Modifier.padding(bottom = 16.dp) // Adds spacing below the text
         )
 
+        // Descriptive text explaining the purpose of the app
         Text(
             text = "Personal Finance App helps you manage your finances, set budgets, and track expenses. " +
                     "This application is designed for personal use and ensures that your data remains secure.\n\n" +
                     "Version: 1.0.0",
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(horizontal = 16.dp)
+            style = MaterialTheme.typography.bodyLarge, // Uses body text typography
+            color = MaterialTheme.colorScheme.onSurfaceVariant, // Uses a variant color for text visibility
+            textAlign = TextAlign.Center, // Centers the text horizontally
+            modifier = Modifier.padding(horizontal = 16.dp) // Adds horizontal padding to the text
         )
 
+        // Spacer to create vertical space between text and button
         Spacer(modifier = Modifier.height(24.dp))
 
+        // Button to navigate back to the Home screen
         Button(
-            onClick = { navController.navigate("home") },
-            modifier = Modifier.fillMaxWidth(0.8f)
+            onClick = { navController.navigate("home") }, // Navigates to the "home" route
+            modifier = Modifier.fillMaxWidth(0.8f) // Makes the button 80% of the screen width
         ) {
-            Text("Back to Home")
+            Text("Back to Home") // Label displayed on the button
         }
     }
 }
