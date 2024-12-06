@@ -4,7 +4,7 @@
 
 ### 👨‍💻 Team Members:
 - Himal Shrestha
-- Waleed Shahid
+- Waleed Shahid (recent one)
 - Joel Saravia
 - Moeez Zahid
 
