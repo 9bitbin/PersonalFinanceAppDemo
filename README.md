@@ -50,7 +50,7 @@ We have created a wireframe to illustrate the concept of the app. This wireframe
 - **Himal Shrestha**: [9bitbin](https://github.com/9bitbin)
 - **Waleed Shahid**: [waleedsh02](https://github.com/waleedsh02)
 - **Joel Saravia**: [joeljl521](https://github.com/joeljl521)
-- **Moeez Zahid**: [zahidmoeez](https://github.com/zahidmoeez)
+- **Moeez Zahid**: [zahidmoeez](https://github.com/zahidmoeez) // [gle63](https://github.com/gle63) (Some files were committed and pushed from the second account for some weird reason).
 
 ## 📈 Project Plan for the Next 4 Weeks
 
