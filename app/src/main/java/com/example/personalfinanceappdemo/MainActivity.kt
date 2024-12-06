@@ -113,3 +113,4 @@ data class Transaction(
     val type: String = "", // The type of the transaction (e.g., Income, Expense)
     val date: Timestamp = Timestamp.now() // The date of the transaction (default is the current time)
 )
+

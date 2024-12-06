@@ -159,3 +159,4 @@ fun FinancialSummary(budget: Float, expenses: Float) {
         }
     }
 }
+

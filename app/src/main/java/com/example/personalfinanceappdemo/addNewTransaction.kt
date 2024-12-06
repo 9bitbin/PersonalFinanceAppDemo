@@ -18,3 +18,4 @@ fun addNewTransaction(amount: Double, category: String, type: String, navControl
             navController.popBackStack()
         }
 }
+

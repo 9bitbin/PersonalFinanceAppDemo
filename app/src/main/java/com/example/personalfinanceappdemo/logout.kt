@@ -12,3 +12,4 @@ fun logout(navController: NavController) {
         popUpTo("home") { inclusive = true } // This will remove the "home" screen from the back stack
     }
 }
+

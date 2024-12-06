@@ -37,3 +37,4 @@ fun signUp(email: String, password: String, onSuccess: () -> Unit, onFailure: (S
         }
     }
 }
+

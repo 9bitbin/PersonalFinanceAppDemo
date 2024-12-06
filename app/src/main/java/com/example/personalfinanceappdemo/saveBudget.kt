@@ -16,3 +16,4 @@ fun saveBudget(budget: Double, navController: NavController) {
             navController.navigate("home")
         }
 }
+

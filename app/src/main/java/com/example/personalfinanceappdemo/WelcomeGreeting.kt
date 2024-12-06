@@ -30,3 +30,4 @@ fun WelcomeGreeting() {
         textAlign = TextAlign.Center // Align the text to the center of its container
     )
 }
+

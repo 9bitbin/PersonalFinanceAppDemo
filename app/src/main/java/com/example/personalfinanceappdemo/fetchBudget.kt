@@ -9,3 +9,4 @@ suspend fun fetchBudget(userId: String): Double {
     // Retrieve the budget value from the document; return 0.0 if it's null
     return doc.getDouble("budget") ?: 0.0
 }
+
